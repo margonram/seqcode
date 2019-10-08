@@ -13,25 +13,25 @@ Enrique Blanco (CRG, 2013-2020)
 
 ## 1. What is SeqCode?
 
-SeqCode is a family of applications designed to develop high-quality pictures and perform genome-wide calculations from high-throughput sequencing experiments. This software is presented into two distinct modes: web tools and command line. The website of SeqCode offers most functions to users with no previous expertise in bioinformatics, including operations on a selection of published ChIP-seq samples and applications to generate multiple classes of graphics from data files of the user. The standalone version of SeqCode, instead, allows bioinformaticians to run each command on any ChIPseq, ATACseq or RNAseq experiment locally in their computer. The architecture of the source code is modular and the input/output interface of the commands is suitable to be integrated into existing pipelines of genome analysis. SeqCode has been written in ANSI C, which favors the compatibility in every UNIX platform and grants a high performance and speed when analyzing sequencing data. Meta-plots, heatmaps, boxplots and the rest of images produced by SeqCode are internally generated using R. SeqCode relies on the RefSeq reference annotations and is able to deal with the genome and assembly release of every organism that is available from this consortium.
+SeqCode is a family of applications designed to develop high-quality images and perform genome-wide calculations from high-throughput sequencing experiments. This software is presented into two distinct modes: web tools and command line. The website of SeqCode offers most functions to users with no previous expertise in bioinformatics, including operations on a selection of published ChIP-seq samples and applications to generate multiple classes of graphics from data files of the user. On the contrary, the standalone version of SeqCode allows bioinformaticians to run each command on any type of sequencing data locally in their computer. The architecture of the source code is modular and the input/output interface of the commands is suitable to be integrated into existing pipelines of genome analysis. SeqCode has been written in ANSI C, which favors the compatibility in every UNIX platform and grants a high performance and speed when analyzing sequencing data. Meta-plots, heatmaps, boxplots and the rest of images produced by SeqCode are internally generated using R. SeqCode relies on the RefSeq reference annotations and is able to deal with the genome and assembly release of every organism that is available from this consortium.
 
 The SeqCode source code is accessible from GitHub at: https://github.com/eblancoga/seqcode
 
 The SeqCode web tools are available at: http://ldicrocelab.crg.es
 
-Selection of most relevant SeqCode applications:
+Selection of most relevant SeqCode applications: ((Add the name of the function in each example))
 
-* Generate profiles of ChIPseq/ATACseq/RNAseq samples for genome browser visualizations
-* Calculate the distribution of genome features from a set of ChIP-seq peaks or regions
-* Match ChIP-seq peaks to genes based in any catalog of RefSeq transcript annotations
+* Generate profiles of sequencing data for genome browser visualizations
+* Calculate the distribution of genome features from a set of genomic coordinates
+* Match genomic coordinates to genes based in any catalog of RefSeq transcript annotations
 * Produce high-quality aggregated plots centered around TSS, TES, TSS-TES and peak centers
-* Produce heat maps of ChIP-seq signal intensities around TSS, TES, TSS-TES and peak centers
+* Produce heatmaps of sequencing signal intensities around TSS, TES, TSS-TES and peak centers
 * Calculate the count of reads of one sequencing experiment on a set of regions
-* Compare two sets of peaks or genomic regions to determine the degree of overlap
+* Compare two sets of peaks or genomic regions to determine the degree of overlap between them
 * Calculate the evolutionary conservation score on a set of genomic regions
 * Introduce spike-in values to normalize most genome-wide analysis
 * Generate boxplots with multiple graphical options to customize the final result
-* Perform PCA analysis, scatter-plots and heat-maps of genes based on expression or signal values
+* Perform PCA plots, scatter-plots and heatmaps of genes based on expression or signal values
 * Produce Venn diagrams for multiple sets of elements and UpSet charts
 * Basic operations on lists of elements such as join, filter and fold-change analysis
 
@@ -71,7 +71,7 @@ General description of the software and basic instructions to run SeqCode in you
 * LICENSE:
 Open software license (GPL version 2.0/3.0).
 * Makefile:
-List of rules to make the binaries of SeqoCode applications.
+List of rules to make the binaries of SeqCode applications.
 * bin/:
 Binary files to execute SeqCode applications.
 * include/:
