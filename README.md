@@ -71,7 +71,7 @@ General description of the software and basic instructions to run SeqCode in you
 * LICENSE:
 Open software license (GPL version 2.0/3.0).
 * Makefile:
-List of rules to make the binaries of SeqoCode applications.
+List of rules to make the binaries of SeqCode applications.
 * bin/:
 Binary files to execute SeqCode applications.
 * include/:
